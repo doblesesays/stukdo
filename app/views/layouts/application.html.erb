@@ -4,11 +4,16 @@
   <title>Stukdo</title>
   <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "flatly.min"
+		# => <link href="/assets/flatly.min.css" media="screen" rel="stylesheet"
+	%>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
 
 </body>
 </html>
