@@ -53,3 +53,6 @@ gem "font-awesome-rails"
 
 #para crear formularios mas facilmente
 gem 'simple_form'
+
+#para administrar signing in, and registrations, and securing sessions
+gem 'devise'
