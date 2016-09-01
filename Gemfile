@@ -50,3 +50,6 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 #agrenado font-awesome
 gem "font-awesome-rails"
+
+#para crear formularios mas facilmente
+gem 'simple_form'
