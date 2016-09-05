@@ -56,3 +56,6 @@ gem 'simple_form'
 
 #para administrar signing in, and registrations, and securing sessions
 gem 'devise'
+
+#para mostrar los videos y otros contenidos
+gem 'auto_html', '~> 1.6'
