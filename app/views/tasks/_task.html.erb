@@ -11,14 +11,14 @@
 			<% if task.state == 'doing' %>
 				<!-- left arrow to todo
 				right arrow to done -->
-				<%= button_to '<i class="fa fa-arrow-left"></i>'.html_safe, change_task_path(task, state: "to_do"), method: :post, class: 'btn btn-info btn-md btn-block' %>
-				<%= button_to '<i class="fa fa-arrow-right"></i>'.html_safe, change_task_path(task, state: "done"), method: :post, class: 'btn btn-info btn-md btn-block' %>
+				<%= link_to '<i class="fa fa-arrow-left"></i>'.html_safe, change_task_path(task, state: "to_do"), method: :get, class: 'btn btn-info btn-md btn-block' %>
+				<%= link_to '<i class="fa fa-arrow-right"></i>'.html_safe, change_task_path(task, state: "done"), method: :get, class: 'btn btn-info btn-md btn-block' %>
 			<% elsif task.state == 'done' %>
 				<!-- left arrow to doing -->
-				<%= button_to '<i class="fa fa-arrow-left"></i>'.html_safe, change_task_path(task, state: "doing"), method: :post, class: 'btn btn-info btn-md btn-block' %>
+				<%= link_to '<i class="fa fa-arrow-left"></i>'.html_safe, change_task_path(task, state: "doing"), method: :get, class: 'btn btn-info btn-md btn-block' %>
 			<% else %>
 				<!-- right arrow to doing -->
-				<%= button_to '<i class="fa fa-arrow-right"></i>'.html_safe, change_task_path(task, state: "doing"), method: :post, class: 'btn btn-info btn-md btn-block' %>
+				<%= link_to '<i class="fa fa-arrow-right"></i>'.html_safe, change_task_path(task, state: "doing"), method: :get, class: 'btn btn-info btn-md btn-block' %>
 			<% end %>
 		</div>
 	</div>

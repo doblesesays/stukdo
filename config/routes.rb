@@ -3,7 +3,7 @@ Stukdo::Application.routes.draw do
 
   resources :tasks do
     member do
-      post :change
+      get :change
     end
   end
   
