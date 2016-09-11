@@ -4,6 +4,7 @@ Stukdo::Application.routes.draw do
   resources :tasks do
     member do
       get :change
+      delete :destroy, as: 'delete'
     end
   end
   
